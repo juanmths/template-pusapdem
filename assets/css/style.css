@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* typed.js */
+.typed {
+  border-bottom: 2px solid #ffffff;
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* end typed.js */
+.kategori {
+  border-radius: 50px;
+}
+.kategori:hover {
+  border-radius: 0px 30px 0 30px;
+  box-shadow: 10px 10px 5px ff1f1f;
+}
+.card-link {
+  text-decoration: none;
+}
+.card-link:hover {
+  text-decoration: none;
+  box-shadow: 10px 10px 5px grey;
+}
+
+/* BUbble */
+
+.books {
+  width: 60%;
+  position: absolute;
+  right: 0px;
+  top: 5000px;
+}
+
+.bubble {
+  width: 500px;
+  left: -300px;
+  position: absolute;
+}
+.bubble2 {
+  width: 500px;
+  position: absolute;
+  right: 100px;
+  top: 1300px;
+}
+/* end bubble */
+/*Navbar*/
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: "Viga", sans-serif;
+  font-size: 32px;
+}
+/*End Navbar*/
+.section-1 {
+  background-color: aqua;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+  background-image: url(../img/PusAPDem.jpg);
+  background-size: cover;
+  height: 500px !important;
+  text-align: center;
+  position: relative;
+  border-bottom: 5px solid #0099ff;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(15, 131, 212, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/*End Jumbotron*/
+/* footer */
+
+.fa-heart {
+  color: pink;
+}
+
+footer {
+  background: linear-gradient(90deg, rgba(15, 131, 212, 1) 0%, rgba(0, 211, 255, 1) 100%);
+}
+
+/* End footer */
+
+@media (min-width: 992px) {
+  /*Navbar*/
+  .bg-nav {
+    background-image: linear-gradient(to bottom, rgba(15, 131, 212, 1), rgba(15, 131, 212, 1.5));
+  }
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #322ff2;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  /*End Navbar*/
+
+  /*Jumbotron*/
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 1000px !important;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+    margin-top: 300px;
+  }
+
+  /*End Jumbotron*/
+}
+
+/* End Dekstop Version
+
+/* Mobile Version */
+@media only screen and (max-width: 600px) {
+  .jumbotron .display-4 {
+    margin-top: 125px;
+  }
+
+  .bubble2 {
+    display: none;
+  }
+
+  nav {
+    background: linear-gradient(90deg, rgba(15, 131, 212, 1) 0%, rgba(0, 211, 255, 1) 100%);
+    color: white !important;
+    font-weight: bold;
+  }
+  nav a {
+    color: white !important;
+    font-weight: bold;
+  }
+}
+/* End Mobile Version */
